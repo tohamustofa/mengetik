@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PinterNgetik</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="./images/logo.png" alt="logo PinterNgetik">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="test.html">Typing Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="test">
+        <div class="container">
+            <h1 class="text-center my-4">10 Finger Typing Test</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    Typing Area
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="typingBox">Click <b>Start Typing</b> button, then Type the text below within 1 minute:</label>
+                      <textarea class="form-control" id="typingBoxFetch" rows="7" readonly></textarea>
+                      <textarea class="form-control" id="typingBox" rows="7" autofocus></textarea>
+                    </div>
+                    <button class="btn btn-primary" id="startBtn">Start Typing</button>
+                    <button class="btn btn-danger" id="resetBtn">Reset Results</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    Results
+                  </div>
+                  <div class="card-body">
+                    <p id="wpmDisplay">WPM: 0</p>
+                    <p id="cpmDisplay">CPM: 0</p>
+                    <p id="timeDisplay">Time: 0</p>
+                    <button class="btn btn-primary" id="shareBtn">Share to WhatsApp</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Your Test Dates</th>
+                      <th scope="col">WPM (Word Per Minute)</th>
+                      <th scope="col">CPM (Characters Per Minute)</th>
+                    </tr>
+                  </thead>
+                  <tbody id="resultsTable" style="text-align:center">
+                  </tbody>
+                </table>
+                <nav>
+                  <ul class="pagination text-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <div class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>
+                About Us
+            </h3>
+            <p>Pinter Ngetik WebApps<br><br>
+                <i>This is our final project for CS50x Indonesia.</i>
+                <br><br>
+               Members of our group:<br>
+                1. <b>Rizka</b> Novia Rohmawati<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;(TF: Josh Sacher)<br>
+                2. <b>Toha</b> Mustofa Nurhabib<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;(TF: Guy White)
+            </p>
+        </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="test.html">Typing Test</a>
+                <a href="https://cs50.harvard.edu/indonesia/2023/" target="_blank">CS50 for Teachers in Indonesia</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p>
+                        +62 085645604755<br>
+                        +62 081222269122<br>
+                        +966 55 918 1822
+                    </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p>
+                        enccaingrowth@gmail.com<br>
+                        tohamustofa@gmail.com
+                    </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>
+                        Jeddah & Indonesia
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1>
+            <h1 class="credit">
+                &copy; copyright @ 2023 by Toha & Rizka
+            </h1>
+        </h1>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
