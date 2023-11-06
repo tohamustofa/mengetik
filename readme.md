@@ -1,1 +1,1 @@
-Final Project CS50x Harvar University 2023
+Final Project CS50x dari Harvard University (2023)
